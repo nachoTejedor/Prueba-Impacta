@@ -14,11 +14,24 @@
             <p class="link"><a href="">Clic aquí</a></p>
         </div>
     </header>
-    <div class="menu-header">
-        <div class="image">
-            <img src="{{ asset('img/logos/Recurso 13.svg') }}" alt="Descripción de la imagen">
-        </div>
+    <div class="header">
+    <div class="image">
+        <img src="{{ asset('/img/logos/logo.svg') }}" alt="Descripción de la imagen">
     </div>
+    <nav class="menu-header">
+        <ul>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Proyectos</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+    <div class="redes">
+    <img src="{{ asset('/img/logos/Recurso.svg') }}" alt="Descripción de la imagen" class="menu-icon">
+    </div>
+   
+</div>
+
   <!-- Slider -->
   <div class="container-slider w-full h-80 relative"> <!-- Añadir "relative" aquí -->
         <div class="slider relative w-full overflow-hidden">
@@ -33,7 +46,6 @@
                 <img src="{{ asset('img/slider/edit 4 copia.webp') }}" class="w-full h-full object-cover" alt="Imagen 4">
             </div>
         </div>
-
         <!-- Texto superpuesto -->
         <p class="textoSuperpuesto absolute top-80 left-10 text-white text-8xl font-bold bg-black bg-opacity-0 p-4 w-1/4 texto-superpuesto">
             A veces, somos gente normal

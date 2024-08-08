@@ -12,13 +12,49 @@
     padding-left: 10px;
     text-decoration: underline;
 }
-.menu-header{
+.header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
-    padding: 5px;
-    color:#e2001a;
+    padding: 30px;
+    background-color: #f8f8f8; /* Fondo opcional para visibilidad */
 }
+
+.image {
+    width: 150px;
+}
+
+.image img {
+    max-height: 50px; /* Ajusta el tamaño del logo si es necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.menu-header {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1; /* Permite que el menú ocupe el espacio disponible */
+}
+
+.menu-header ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    margin: 0; /* Elimina el margen por defecto */
+    padding: 0; /* Elimina el padding por defecto */
+    display: flex; /* Alinea los elementos en una sola línea */
+}
+
+.menu-header li {
+    margin: 0 15px; /* Espaciado horizontal entre los elementos de la lista */
+}
+
+.menu-header a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    font-weight: bold;
+    color: #e2001a; /* Color del texto de los enlaces */
+}
+
+
 .container-slider{
 height: 100px;
 }
