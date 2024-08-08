@@ -1,0 +1,38 @@
+.publi{
+    display: flex;
+    background-color: #e2001a;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    p{
+        padding: 5px;
+    }
+}
+.link{
+    padding-left: 10px;
+    text-decoration: underline;
+}
+.menu-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    color:#e2001a;
+}
+.container-slider{
+height: 100px;
+}
+/* Degradado */
+.degradado {
+    background: linear-gradient(to right, 
+                                rgb(226, 0, 26) 5%, 
+                                rgba(226, 0, 26, 0.8) 10%,
+                                rgba(226, 0, 26, 0.8) 15%,
+                                rgba(226, 0, 26, 0) 30%);
+    pointer-events: none; /* Asegúrate de que la capa de degradado no interfiera con los eventos del ratón */
+    z-index: 20;
+}
+.textoSuperpuesto{
+    z-index: 21;
+}
+
