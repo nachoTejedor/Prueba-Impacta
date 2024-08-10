@@ -8,6 +8,7 @@
                 <li><a href="#servicios">Servicios</a></li>
                 <li><a href="#">Proyectos</a></li>
                 <li><a href="#footer">Contacto</a></li>
+                <li><a href="/registeredUusers">Usuarios Registrados</a></li>
             </ul>
         </nav>
         <div class="redes">
