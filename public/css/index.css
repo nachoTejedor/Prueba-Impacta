@@ -22,47 +22,29 @@
     text-decoration: underline;
 }
 
-.header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 30px;
-    background-color: #f8f8f8; /* Fondo opcional para visibilidad */
+.gradientEmpresas {
+    height: 100px;
+    background: linear-gradient(to bottom, #ffffff, #e2001a); /* Degradado de blanco a rojo */
 }
-
-.image {
-    width: 150px;
+.empresasContainer {
+   background-color: #e2001a;
+    height: 800px;
+    padding: 20px;
 }
-
-.image img {
-    max-height: 50px; /* Ajusta el tamaño del logo si es necesario */
-    height: auto; /* Mantiene la proporción de la imagen */
-}
-
-.menu-header {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-grow: 1; /* Permite que el menú ocupe el espacio disponible */
-}
-
-.menu-header ul {
-    list-style: none; /* Elimina los puntos de la lista */
-    margin: 0; /* Elimina el margen por defecto */
-    padding: 0; /* Elimina el padding por defecto */
-    display: flex; /* Alinea los elementos en una sola línea */
-}
-
-.menu-header li {
-    margin: 0 15px; /* Espaciado horizontal entre los elementos de la lista */
-}
-
-.menu-header a {
-    text-decoration: none; /* Elimina el subrayado de los enlaces */
+.titulo2{
+    color: white;
+    margin-top: 200px;
+    text-align: center;
     font-weight: bold;
-    color: #e2001a; /* Color del texto de los enlaces */
+    padding: 10px;
+    font-size: 30px;
 }
+
+.redes img{
+    fill: #e2001a;
+    width: 30px;
+}
+
 
 /* Degradado */
 .degradado {
@@ -214,14 +196,14 @@
 
 /* Títulos y descripciones */
 .titulo {
-    font-size: 50px; /* Ajusta el tamaño del título */
+    font-size: 35px; /* Ajusta el tamaño del título */
     font-weight: bold;
     margin-bottom: 1rem;
 }
 
 .descripcion {
     color: #4a4a4a;
-    font-size: 1.25rem; /* Tamaño del texto del párrafo */
+    font-size: 15px; /* Tamaño del texto del párrafo */
 }
 
 /* Opciones de degradado */
