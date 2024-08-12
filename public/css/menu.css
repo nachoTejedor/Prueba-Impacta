@@ -8,7 +8,12 @@
 .image {
     width: 150px;
 }
-
+.redes{
+    justify-content: space-between;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+}
 .image img {
     max-height: 50px; /* Ajusta el tamaño del logo si es necesario */
     height: auto; /* Mantiene la proporción de la imagen */
@@ -39,11 +44,9 @@
     color: #e2001a; /* Color del texto de los enlaces */
 }
 .redes img{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     fill: #e2001a;
     width: 30px;
+    padding: 2px;
 }
 /* Degradado */
 .degradado {
