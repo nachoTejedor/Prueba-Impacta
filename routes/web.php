@@ -6,7 +6,7 @@ use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Auth;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 })->name('home'); // Añade un nombre a la ruta
 
 Route::get('/nosotros', function () {
