@@ -98,11 +98,18 @@ tu visión en realidad.</p>
         </div>
     </div>
 </section>
-<div class="gradientEmpresas"></div>
+
+<div class="containerSmoke">
+<div class="base-div"></div>
+        <img src="/img/images/humo.png" alt="Man with colorful smoke" class="overlay-image">
+        <div class="overlay-text">VENDEMOS HUMO CON MUCHA PASIÓN</div>
+        <div class="gradientEmpresas"></div>
+    </div>
 <div class="empresasContainer">
     <h2 class="titulo2">¿Nuestros Clientes?</h2>
 @include('bannerEmpresas')
 </div>
+
 <div>
 @include('userForm')
 </div>

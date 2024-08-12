@@ -216,3 +216,36 @@
     pointer-events: none; /* Asegúrate de que la capa de degradado no interfiera con los eventos del ratón */
     z-index: 1;
 }
+.containerSmoke {
+    top: 50px;
+    position: relative;
+    text-align: center;
+}
+.base-div {
+    width: 100%;
+    height: 400px;
+    background-color: #010038; /* A neutral color for the base div */
+    z-index: 1;
+}
+
+.overlay-image {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px; /* Make the image larger than the div */
+    z-index: 2;
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 10px;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+    text-transform: uppercase;
+    z-index: 3;
+}
