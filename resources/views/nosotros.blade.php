@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css">
     <link rel="stylesheet" href="/css/menu.css">
     <link rel="stylesheet" href="/css/nosotros.css" >
+    <link rel="stylesheet" href="/css/footer.css">
     <title>Impacta Comunicación</title>
 </head>
 <body>

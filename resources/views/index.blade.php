@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css">
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/form.css">
     <link rel="icon" href="{{ asset('/img/logos/impacta.svg') }}" type="image/x-icon">
 
     <title>Document</title>
