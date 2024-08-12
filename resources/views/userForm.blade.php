@@ -183,6 +183,7 @@
             background-color: #ffdb4d;
         }
         .tituloForm {
+            font-family: 'Outfit';
             font-size: 30px;
             color: white;
             margin-bottom: 20px;

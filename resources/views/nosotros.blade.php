@@ -5,74 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css">
     <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="/css/nosotros.css" >
     <title>Impacta Comunicación</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background: #e2001a;
-            color: #fff;
-            padding-top: 20px;
-            min-height: 70px;
-            border-bottom: #fff 3px solid;
-            margin-bottom: 20px;
-        }
-        header h1 {
-            text-align: center;
-            text-transform: uppercase;
-            margin: 0;
-        }
-        .main-content {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            padding: 20px;
-        }
-        .slider {
-            height: 600px;
-            flex: 1;
-            position: relative;
-        }
-        .slider img {
-            max-width: 100%;
-            height: 600px;
-            border-radius: 10px;
-        }
-        .content {
-            flex: 1;
-            padding: 20px;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .content h2 {
-            font-size: 24px;
-            margin: 20px 0;
-        }
-        .content p {
-            font-size: 18px;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-        footer p {
-            margin: 0;
-            font-size: 14px;
-        }
-    </style>
 </head>
 <body>
     @include('menu')

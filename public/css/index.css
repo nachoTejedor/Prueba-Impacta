@@ -1,3 +1,18 @@
+@font-face {
+    font-family: 'Outfit';
+    src: url('/public/css/Outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: 'Outfit';
+    src: url('/public/css/Outfit/static/Outfit-Bold.ttf') format('truetype');
+    font-weight: bold;
+  }
+body {
+font-family: 'Outfit';
+font-weight: normal;
+}
+
 .publi {
     display: flex;
     background-color: #e2001a;
@@ -196,7 +211,8 @@
 
 /* Títulos y descripciones */
 .titulo {
-    font-size: 35px; /* Ajusta el tamaño del título */
+    font-family: 'Outfit';
+    font-size: 40px; /* Ajusta el tamaño del título */
     font-weight: bold;
     margin-bottom: 1rem;
 }
@@ -238,6 +254,8 @@
 }
 
 .overlay-text {
+    width: 100%;
+    font-family: 'Outfit';
     position: absolute;
     bottom: 10px;
     top: 200px;
@@ -248,4 +266,5 @@
     font-weight: bold;
     text-transform: uppercase;
     z-index: 3;
+    letter-spacing: 10px; /* Espacio entre las letras */
 }
