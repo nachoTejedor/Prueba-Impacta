@@ -10,7 +10,7 @@ class DashboardController extends Controller
     public function index()
     {
         // Asegúrate de que el usuario esté autenticado
-        if (!auth()->check()) {
+      if (!auth()->guard()->check()) {
             return redirect('/')->with('error', 'You need to log in first.');
         }
 

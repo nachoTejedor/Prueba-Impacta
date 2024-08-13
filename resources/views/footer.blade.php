@@ -48,7 +48,7 @@
                     <a href="#"><i class="fab fa-facebook"></i></a>
                 </div>
                 <div class="footer-logo">
-                    <img src="impacta.png" alt="Impacta Logo">
+                    <img src="/img/logos/impactaBlanco.svg" alt="Impacta Logo">
                 </div>
             </div>
         </div>

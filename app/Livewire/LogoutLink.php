@@ -12,14 +12,15 @@ class LogoutLink extends Component
     {
         // Ejecuta el logout
         Auth::guard('web')->logout();
-
+    
         // Invalida la sesión
         Session::invalidate();
         Session::regenerateToken();
-
-        // Redirige al inicio
-        return redirect('/');
+    
+        // Redirige a la ruta con nombre 'home'
+        return redirect()->route('home')->with('reload', true);
     }
+    
 
     public function render()
     {

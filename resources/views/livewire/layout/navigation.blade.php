@@ -33,7 +33,7 @@ new class extends Component
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" wire:navigate>
                         {{ __('Dashboard') }}
                     </x-nav-link>
-                    <x-nav-link href="#" :active="request()->routeIs('home')" wire:click.prevent="logout">
+                    <x-nav-link href="#" wire:click.prevent="logout">
                     @livewire('logout-link')
                     {{ __('Home') }}
                     </x-nav-link>
