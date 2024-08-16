@@ -2,15 +2,15 @@
     font-family: 'Outfit';
     src: url('/public/css/Outfit/Outfit-VariableFont_wght.ttf') format('truetype');
     font-weight: normal;
-  }
-  @font-face {
+}
+@font-face {
     font-family: 'Outfit';
     src: url('/public/css/Outfit/static/Outfit-Bold.ttf') format('truetype');
     font-weight: bold;
-  }
+}
 body {
-font-family: 'Outfit';
-font-weight: normal;
+    font-family: 'Outfit';
+    font-weight: normal;
 }
 
 .publi {
@@ -42,7 +42,7 @@ font-weight: normal;
     background: linear-gradient(to bottom, #ffffff, #e2001a); /* Degradado de blanco a rojo */
 }
 .empresasContainer {
-   background-color: #e2001a;
+    background-color: #e2001a;
     height: 800px;
     padding: 20px;
 }
@@ -59,7 +59,6 @@ font-weight: normal;
     fill: #e2001a;
     width: 30px;
 }
-
 
 /* Degradado */
 .degradado {
@@ -149,7 +148,6 @@ font-weight: normal;
     transform: translateY(0); /* Regresa a su posición original */
 }
 
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -232,11 +230,13 @@ font-weight: normal;
     pointer-events: none; /* Asegúrate de que la capa de degradado no interfiera con los eventos del ratón */
     z-index: 1;
 }
+
 .containerSmoke {
     top: 50px;
     position: relative;
     text-align: center;
 }
+
 .base-div {
     width: 100%;
     height: 400px;
@@ -271,7 +271,7 @@ font-weight: normal;
 
 table {
     background-color: transparent;
- align-items: center;
+    align-items: center;
     width: 100%;
     border-collapse: separate; /* Para que funcione border-spacing */
     border-spacing: 20px; /* Ajusta el espacio entre las celdas */
@@ -291,6 +291,163 @@ td {
     justify-content: center; /* Centra horizontalmente el contenido en Flexbox */
     align-items: center; /* Centra verticalmente el contenido en Flexbox */
 }
-td img{
+
+td img {
     max-width: 100px;
-    margin: 0 auto;}
+    margin: 0 auto;
+}
+
+/* Media Queries para Responsividad */
+
+/* Dispositivos móviles (pantallas pequeñas) */
+@media (max-width: 767px) {
+    .titulo2 {
+        font-size: 24px;
+        margin-top: 50px;
+    }
+
+    .container {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+        padding: 10px;
+    }
+
+    .servicio {
+        padding: 1rem;
+    }
+
+    .imgWrapper {
+        height: 200px; /* Ajustar la altura de las imágenes en pantallas pequeñas */
+    }
+
+    .titulo {
+        font-size: 28px; /* Reducir tamaño de los títulos */
+    }
+
+    .descripcion {
+        font-size: 14px; /* Reducir tamaño del texto */
+    }
+
+    .overlay-text {
+        font-size: 30px; /* Reducir tamaño del texto de la superposición */
+        letter-spacing: 5px; /* Reducir espaciado entre letras */
+    }
+
+    .base-div {
+        height: 300px; /* Ajustar altura en pantallas pequeñas */
+    }
+
+    .overlay-image {
+        width: 250px; /* Reducir tamaño de la imagen de superposición */
+    }
+
+    table {
+        border-spacing: 10px; /* Reducir espacio entre celdas en pantallas pequeñas */
+        margin: 10px 0;
+    }
+
+    td {
+        height: 150px; /* Reducir altura de celdas */
+    }
+}
+
+/* Tablets (pantallas medianas) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .titulo2 {
+        font-size: 28px;
+        margin-top: 100px;
+    }
+
+    .container {
+        grid-template-columns: 1fr 1fr; /* Dos columnas en pantallas medianas */
+        padding: 15px;
+    }
+
+    .servicio {
+        padding: 1.2rem;
+    }
+
+    .imgWrapper {
+        height: 250px; /* Ajustar altura de imágenes en pantallas medianas */
+    }
+
+    .titulo {
+        font-size: 32px; /* Ajustar tamaño de títulos */
+    }
+
+    .descripcion {
+        font-size: 15px; /* Ajustar tamaño del texto */
+    }
+
+    .overlay-text {
+        font-size: 38px; /* Ajustar tamaño del texto de la superposición */
+        letter-spacing: 8px; /* Ajustar espaciado entre letras */
+    }
+
+    .base-div {
+        height: 350px; /* Ajustar altura en pantallas medianas */
+    }
+
+    .overlay-image {
+        width: 300px; /* Ajustar tamaño de la imagen de superposición */
+    }
+
+    table {
+        border-spacing: 15px; /* Ajustar espacio entre celdas en pantallas medianas */
+        margin: 15px 0;
+    }
+
+    td {
+        height: 175px; /* Ajustar altura de celdas */
+    }
+}
+
+/* Desktop (pantallas grandes) */
+@media (min-width: 1025px) {
+    .titulo2 {
+        font-size: 30px;
+        margin-top: 150px;
+    }
+
+    .container {
+        grid-template-columns: repeat(2, 1fr); /* Mantener dos columnas */
+        padding: 20px;
+    }
+
+    .servicio {
+        padding: 1.5rem;
+    }
+
+    .imgWrapper {
+        height: 300px; /* Ajustar altura de imágenes en pantallas grandes */
+    }
+
+    .titulo {
+        font-size: 40px; /* Tamaño de títulos */
+    }
+
+    .descripcion {
+        font-size: 15px; /* Tamaño del texto */
+    }
+
+    .overlay-text {
+        font-size: 45px; /* Tamaño del texto de la superposición */
+        letter-spacing: 10px; /* Espaciado entre letras */
+    }
+
+    .base-div {
+        height: 400px; /* Altura en pantallas grandes */
+    }
+
+    .overlay-image {
+        width: 400px; /* Tamaño de la imagen de superposición */
+    }
+
+    table {
+        border-spacing: 20px; /* Espacio entre celdas */
+        margin: 20px 0;
+    }
+
+    td {
+        height: 200px; /* Altura de celdas */
+    }
+}

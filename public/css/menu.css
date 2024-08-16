@@ -5,15 +5,18 @@
     padding: 30px;
     background-color: #f8f8f8; /* Fondo opcional para visibilidad */
 }
+
 .image {
     width: 150px;
 }
-.redes{
+
+.redes {
     justify-content: space-between;
     gap: 10px;
     display: flex;
     flex-direction: row;
 }
+
 .image img {
     max-height: 50px; /* Ajusta el tamaño del logo si es necesario */
     height: auto; /* Mantiene la proporción de la imagen */
@@ -43,11 +46,13 @@
     font-weight: bold;
     color: #e2001a; /* Color del texto de los enlaces */
 }
-.redes img{
+
+.redes img {
     fill: #e2001a;
     width: 30px;
     padding: 2px;
 }
+
 /* Degradado */
 .degradado {
     background: linear-gradient(to right, 
@@ -95,5 +100,100 @@
     .textoSuperpuesto {
         font-size: 4.5rem; /* md:text-8xl */
         width: 25%; /* md:w-1/4 */
+    }
+}
+
+/* Media Queries para Responsividad */
+
+/* Dispositivos móviles (pantallas pequeñas) */
+@media (max-width: 767px) {
+    .header {
+        flex-direction: column; /* Coloca los elementos en una columna */
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .image {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px; /* Añade espacio entre la imagen y el menú */
+    }
+
+    .image img {
+        max-height: 40px; /* Reduce el tamaño del logo */
+    }
+
+    .menu-header {
+        width: 100%;
+        justify-content: flex-start; /* Alinea el menú al inicio */
+        margin-bottom: 20px; /* Añade espacio entre el menú y las redes */
+    }
+
+    .menu-header ul {
+        flex-direction: column; /* Coloca los elementos del menú en una columna */
+        width: 100%;
+    }
+
+    .menu-header li {
+        margin: 10px 0; /* Espaciado vertical entre los elementos del menú */
+    }
+
+    .redes {
+        justify-content: center; /* Centra los iconos de redes sociales */
+        width: 100%;
+        margin-top: 20px; /* Añade espacio en la parte superior */
+    }
+}
+
+/* Tablets (pantallas medianas) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .header {
+        flex-direction: row;
+        padding: 25px;
+    }
+
+    .image {
+        width: 120px;
+    }
+
+    .menu-header {
+        width: 60%;
+        justify-content: flex-start;
+    }
+
+    .menu-header ul {
+        justify-content: space-around; /* Distribuye equitativamente los elementos del menú */
+    }
+
+    .redes {
+        justify-content: flex-end; /* Alinea las redes sociales a la derecha */
+        gap: 15px;
+    }
+
+    .image img {
+        max-height: 45px; /* Ajusta ligeramente el tamaño del logo */
+    }
+}
+
+/* Desktop (pantallas grandes) */
+@media (min-width: 1025px) {
+    .header {
+        padding: 30px;
+    }
+
+    .image {
+        width: 150px;
+    }
+
+    .menu-header {
+        width: 50%;
+    }
+
+    .redes {
+        justify-content: space-between;
+    }
+
+    .image img {
+        max-height: 50px; /* Tamaño original del logo */
     }
 }
